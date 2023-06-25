@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch2 Lecture 74 for in/ for of loop</title>
+</head>
+
+<body>
+
+    <script>
+        // for in lop
+
+        let student1 = {
+
+            //1 Property : Value
+            name: "ankit",
+            surname: "tanwar",
+            ph: 443444242,
+            friends: ["ani", "sunil"]
+        }
+        console.log('hell')
+
+
+        for (key in student1) {
+
+            // console.log(student1.key);
+            console.log(student1[`${key}`])
+            console.log(student1[key])
+        }
+
+
+    </script>
+
+    <script>
+
+        // for of Loop 
+
+        let name = "My name is ankit Tanwar";
+
+        for (x of name) {
+            console.log(x);
+        }
+
+
+        let friends = ["a", "b", 'c', `d`, { name: "ankit" }, []];
+
+        for (y of friends) {
+            console.log(y)
+        }
+    </script>
+
+
+
+</body>
+
+</html>
